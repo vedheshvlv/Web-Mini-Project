@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incredible India Tours</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="home-container">
+      <div class="overlay"></div>
+      <div class="content">
+          <h1 class="welcome-text">Welcome to Incredible India Tours</h1>
+          <p class="tagline">Discover the beauty and heritage of India with us</p>
+          
+          <div class="auth-container">
+              <div class="d-flex justify-content-end mb-2">
+                  <div class="theme-toggle">
+                      <span class="theme-toggle-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                          </svg>
+                      </span>
+                      <span class="theme-toggle-text">Dark Mode</span>
+                  </div>
+              </div>
+              
+              <div class="auth-tabs">
+                  <button class="tab-btn active" onclick="showTab('login')">Login</button>
+                  <button class="tab-btn" onclick="showTab('signup')">Sign Up</button>
+              </div>
+              
+              <div id="login" class="auth-form active">
+                  <h3>Welcome Back!</h3>
+                  <form id="login-form" onsubmit="navigateToDestinations(event)">
+                      <div class="form-group">
+                          <input type="email" name="email" placeholder="Email" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" name="password" placeholder="Password" required>
+                      </div>
+                      <button type="submit" class="auth-btn">Login</button>
+                  </form>
+              </div>
+              
+              <div id="signup" class="auth-form">
+                  <h3>Create Account</h3>
+                  <form id="signup-form" onsubmit="navigateToDestinations(event)">
+                      <div class="form-group">
+                          <input type="text" name="fullname" placeholder="Full Name" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="email" name="email" placeholder="Email" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" name="password" placeholder="Password" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+                      </div>
+                      <button type="submit" class="auth-btn">Sign Up</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

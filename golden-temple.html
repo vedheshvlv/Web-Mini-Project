@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Temple - Incredible India Tours</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Incredible India Tours</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container place-detail-container">
+        <div class="place-header">
+            <h1>Golden Temple, Amritsar</h1>
+            <p class="lead">The holiest gurdwara and an important pilgrimage site of Sikhism</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div id="goldenTempleDetailCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#goldenTempleDetailCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#goldenTempleDetailCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#goldenTempleDetailCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#goldenTempleDetailCarousel" data-bs-slide-to="3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://media.istockphoto.com/id/543179390/photo/golden-temple-the-main-sanctuary-of-sikhs-amritsar-india.jpg?s=612x612&w=0&k=20&c=s4bOWzg0e0ecBBPmuzIEShhrmMWFE16cnYlAZ7Nfdeg=" class="d-block w-100" alt="Golden Temple 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static.toiimg.com/thumb/61820954.cms?resizemode=75&width=1200&height=900" class="d-block w-100" alt="Golden Temple 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/6b/92/ef/caption.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="Golden Temple 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://sacredsites.com/images/asia/india/golden_temple_1200.jpg" class="d-block w-100" alt="Golden Temple 4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#goldenTempleDetailCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#goldenTempleDetailCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="place-info-card">
+                    <h3>Quick Information</h3>
+                    <ul>
+                        <li><strong>Location:</strong> Amritsar, Punjab</li>
+                        <li><strong>Best Time to Visit:</strong> October to March</li>
+                        <li><strong>Opening Hours:</strong> Open 24 hours</li>
+                        <li><strong>Entry Fee:</strong> Free</li>
+                        <li><strong>Special Attraction:</strong> Langar (community kitchen) serving free meals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="place-description mt-4">
+            <h2>About Golden Temple</h2>
+            <p>The Golden Temple, also known as Harmandir Sahib, is a gurdwara located in the city of Amritsar, Punjab, India. It is the preeminent spiritual site of Sikhism. The temple is built around a man-made pool that was completed by the fourth Sikh Guru, Guru Ram Das, in 1577.</p>
+            <p>The temple is spiritually the most significant shrine in Sikhism. It became a center of the Singh Sabha Movement between 1883 and 1920s, and the Punjabi Suba movement between 1947 and 1966. In the early 1980s, the Gurdwara became a center of conflict between the Indian government and a movement led by Jarnail Singh Bhindranwale.</p>
+            <p>The Golden Temple is an open house of worship for all people, from all walks of life and faiths. It has a square plan with four entrances, and a circumambulation path around the pool. The complex is a collection of buildings around the sanctum and the pool. One of the most sacred aspects is the Amrit Sarovar, the Pool of Nectar, that surrounds the gurdwara.</p>
+        </div>
+
+        <div class="travel-options mt-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="option-card" id="transport-card">
+                        <h3>Transport</h3>
+                        <p>Choose from our partner airlines to reach Amritsar</p>
+                        <button class="btn btn-primary" onclick="showTransportOptions()">View Options</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="option-card" id="guide-card">
+                        <h3>Offline Guide</h3>
+                        <p>Book a knowledgeable local guide for your visit</p>
+                        <button class="btn btn-primary" onclick="showGuideOptions()">Book Guide</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="option-card" id="package-card">
+                        <h3>Things to Package</h3>
+                        <p>Essential items to bring for your Golden Temple visit</p>
+                        <button class="btn btn-primary" onclick="showPackageInfo()">View List</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="option-card" id="expenditure-card">
+                        <h3>Expenditure</h3>
+                        <p>Calculate the estimated cost for your trip</p>
+                        <button class="btn btn-primary" onclick="showExpenditureCalculator()">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transport Options -->
+        <div class="modal fade" id="transportModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Flight Options to Amritsar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card airline-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSju44UNfQK3NxkeoZWchB9ih8cpw9XcC5dw&s" class="card-img-top" alt="IndiGo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">IndiGo Airlines</h5>
+                                        <p class="card-text">Affordable fares with reliable service</p>
+                                        <a href="https://www.goindigo.in/" target="_blank" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card airline-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm6gJVT9N6yGhTrk9_caN5i2EmHcOSJxNZZw&s" class="card-img-top" alt="SpiceJet">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SpiceJet</h5>
+                                        <p class="card-text">Red, hot, spicy service with great deals</p>
+                                        <a href="https://www.spicejet.com/" target="_blank" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card airline-card">
+                                    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/27/full/1724742744-3171.jpg" class="card-img-top" alt="Air India">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Air India</h5>
+                                        <p class="card-text">India's flagship carrier with premium service</p>
+                                        <a href="https://www.airindia.in/" target="_blank" class="btn btn-primary">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <p><strong>Note:</strong> Sri Guru Ram Dass Jee International Airport in Amritsar has direct flights from major Indian cities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guide Booking -->
+        <div class="modal fade" id="guideModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Book an Offline Guide</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="guide-booking-form">
+                            <div class="mb-3">
+                                <label for="visit-date" class="form-label">Visit Date</label>
+                                <input type="date" class="form-control" id="visit-date" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Select Time Slot</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="timeSlot" id="slot1" value="6:00 AM - 8:00 AM" checked>
+                                    <label class="form-check-label" for="slot1">
+                                        6:00 AM - 8:00 AM (Guide: Gurpreet)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="timeSlot" id="slot2" value="9:00 AM - 11:00 AM">
+                                    <label class="form-check-label" for="slot2">
+                                        9:00 AM - 11:00 AM (Guide: Harjinder)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="timeSlot" id="slot3" value="12:00 PM - 2:00 PM">
+                                    <label class="form-check-label" for="slot3">
+                                        12:00 PM - 2:00 PM (Guide: Manpreet)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="timeSlot" id="slot4" value="3:00 PM - 5:00 PM">
+                                    <label class="form-check-label" for="slot4">
+                                        3:00 PM - 5:00 PM (Guide: Simran)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="num-days" class="form-label">Number of Days</label>
+                                <select class="form-select" id="num-days" required>
+                                    <option value="1">1 Day</option>
+                                    <option value="2">2 Days</option>
+                                    <option value="3">3 Days</option>
+                                    <option value="4">4 Days</option>
+                                    <option value="5">5 Days</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="num-people" class="form-label">Number of People</label>
+                                <input type="number" class="form-control" id="num-people" min="1" value="1" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Book Guide</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Things to Package -->
+        <div class="modal fade" id="packageModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Things to Pack for Golden Temple Visit</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="package-list">
+                            <h6>Essential Items:</h6>
+                            <ul>
+                                <li>Head covering (mandatory for both men and women)</li>
+                                <li>Modest clothing that covers shoulders and knees</li>
+                                <li>Comfortable socks (as shoes must be removed)</li>
+                                <li>Small bag for carrying valuables</li>
+                                <li>Water bottle</li>
+                                <li>Camera (photography allowed in most areas)</li>
+                                <li>ID proof (passport/Aadhar card)</li>
+                            </ul>
+                            
+                            <h6>Additional Items (October to March):</h6>
+                            <ul>
+                                <li>Warm clothes (winters can be cold in Amritsar)</li>
+                                <li>Shawl or light jacket</li>
+                            </ul>
+                            
+                            <div class="alert alert-info mt-3">
+                                <strong>Note:</strong> Shoes must be removed before entering the temple complex. There is a shoe storage facility available.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expenditure Calculator -->
+        <div class="modal fade" id="expenditureModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Trip Expenditure Calculator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="expenditure-form">
+                            <div class="mb-3">
+                                <label for="exp-num-people" class="form-label">Number of People</label>
+                                <input type="number" class="form-control" id="exp-num-people" min="1" value="1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exp-num-days" class="form-label">Number of Days</label>
+                                <input type="number" class="form-control" id="exp-num-days" min="1" value="1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Accommodation Type</label>
+                                <select class="form-select" id="accommodation-type">
+                                    <option value="budget">Budget Hotel</option>
+                                    <option value="mid">Mid-range Hotel</option>
+                                    <option value="luxury">Luxury Hotel</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Include Guide?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="include-guide" checked>
+                                    <label class="form-check-label" for="include-guide">
+                                        Yes, include guide in calculation
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="calculateExpenditure()">Calculate</button>
+                        </form>
+                        
+                        <div id="expenditure-result" class="mt-4" style="display: none;">
+                            <h6>Estimated Expenditure:</h6>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Entry Tickets</td>
+                                            <td id="ticket-cost">₹0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Accommodation</td>
+                                            <td id="accommodation-cost">₹0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Guide Service</td>
+                                            <td id="guide-cost">₹0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Food & Beverages (est.)</td>
+                                            <td id="food-cost">₹0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Local Transport (est.)</td>
+                                            <td id="transport-cost">₹0</td>
+                                        </tr>
+                                        <tr class="table-primary">
+                                            <th>Total Estimated Cost</th>
+                                            <th id="total-cost">₹0</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="alert alert-info mt-2">
+                                <small>Note: This is an estimate. Actual costs may vary based on season and availability.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thank-you-section text-center mt-5 mb-5">
+            <h2>Thank You for Exploring Golden Temple with Us!</h2>
+            <p>We hope you have a spiritually enriching experience at this sacred place.</p>
+            <a href="destinations.html" class="btn btn-primary mt-3">Explore More Destinations</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Incredible India Tours</h5>
+                    <p>Discover the beauty and heritage of India with us.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@incredibleindiatours.com</p>
+                    <p>Phone 1: +91 9390709537</p>
+                    <p>Phone 2: +91 9347251682</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Incredible India Tours. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -98,15 +98,13 @@ function submitContactForm(event) {
   document.getElementById("email-form").reset()
 }
 
-// Theme toggle functionality
+// Theme toggle
 function toggleTheme() {
   const currentTheme = localStorage.getItem("theme") || "light"
   const newTheme = currentTheme === "light" ? "dark" : "light"
 
   document.body.classList.toggle("dark", newTheme === "dark")
   localStorage.setItem("theme", newTheme)
-
-  // Update theme toggle icon
   updateThemeToggleIcon(newTheme)
 }
 
@@ -127,19 +125,18 @@ function updateThemeToggleIcon(theme) {
   })
 }
 
-// Initialize theme on page load
+// Theme on page load
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme") || "light"
   document.body.classList.toggle("dark", savedTheme === "dark")
   updateThemeToggleIcon(savedTheme)
 
-  // Add event listeners to theme toggles
+  // Adding to theme toggles
   const themeToggles = document.querySelectorAll(".theme-toggle")
   themeToggles.forEach((toggle) => {
     toggle.addEventListener("click", toggleTheme)
   })
-
-  // Original script functionality
+  //guide booking
   const guideForm = document.getElementById("guide-booking-form")
   if (guideForm) {
     guideForm.addEventListener("submit", (e) => {

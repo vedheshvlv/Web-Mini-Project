@@ -1,5 +1,5 @@
 :root {
-  /* Light theme (default) */
+  /* Light theme */
   --primary-color: #e63946;
   --secondary-color: #2a9d8f;
   --accent-color: #f8c630;
@@ -67,7 +67,6 @@ body {
   color: var(--navbar-text);
 }
 
-/* Navbar Styles */
 .navbar {
   background-color: var(--navbar-bg);
   padding: 15px 0;
@@ -90,10 +89,9 @@ body {
   color: var(--accent-color) !important;
 }
 
-/* Home Container */
 .home-container {
   height: 100vh;
-  background-image: url("/placeholder.svg?height=1080&width=1920");
+  background-image: url("https://res.cloudinary.com/tycoon-holidays/images/f_auto,q_auto/v1590186692/Bali-Tour-Packages/Bali-Tour-Packages.jpg?_i=AA");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -214,7 +212,6 @@ body {
   background-color: #d32f2f;
 }
 
-/* Destinations Page */
 .destinations-container {
   padding: 40px 0;
   background-color: var(--bg-color);
@@ -266,7 +263,6 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-/* Place Detail Page Styles */
 .place-detail-container {
   padding: 40px 0;
   background-color: var(--bg-color);
@@ -392,7 +388,6 @@ body {
   margin-bottom: 8px;
 }
 
-/* Modal Styles */
 .modal-content {
   background-color: var(--card-bg);
   color: var(--text-color);
@@ -428,7 +423,6 @@ body {
   color: var(--text-color);
 }
 
-/* Contact Page Styles */
 .contact-container {
   padding: 60px 0;
   background-color: var(--bg-color);
@@ -492,7 +486,6 @@ body {
   background-color: #218376;
 }
 
-/* Thank You Page Styles */
 .thank-you-container {
   padding: 60px 0;
   min-height: calc(100vh - 300px);
@@ -579,7 +572,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* Footer Styles */
 .footer {
   background-color: var(--footer-bg);
   color: var(--footer-text);
@@ -611,7 +603,6 @@ body {
   text-decoration: underline;
 }
 
-/* Button Styles */
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
@@ -632,7 +623,6 @@ body {
   color: white;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .welcome-text {
     font-size: 2rem;
